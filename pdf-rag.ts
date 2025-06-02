@@ -4,7 +4,7 @@ import { Ollama } from "@llamaindex/ollama";
 import { HuggingFaceEmbedding } from "@llamaindex/huggingface";
 
 Settings.llm = new Ollama({
-    model: "llama3",
+    model: "llama3.1",
   });
 
   Settings.embedModel = new HuggingFaceEmbedding({

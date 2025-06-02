@@ -8,7 +8,7 @@ export function initSettings() {
   //   model: "gpt-4.1",
   // });
   Settings.llm = new Ollama({
-    model: "llama3",
+    model: "llama3.1",
   });
   // Settings.embedModel = new OpenAIEmbedding({
   //   model: "text-embedding-3-small",
