@@ -10,8 +10,9 @@ async function generateDatasource() {
     persistDir: "storage",
   });
   // load documents from current directory into an index
+  const path = '../pdf/Restoring Pride.pdf'
   const reader = new SimpleDirectoryReader();
-  const documents = await reader.loadData("data");
+  const documents = await reader.loadData("pdf");
 
   await VectorStoreIndex.fromDocuments(documents, {
     storageContext,
